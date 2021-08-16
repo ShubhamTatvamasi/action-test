@@ -8,4 +8,5 @@ jobs:
       - run: free -h
       - run: df -h
       - run: docker images
+      - run: cat /etc/os-release
       
