@@ -1,0 +1,10 @@
+name: Linux Checkup
+on: [push]
+jobs:
+  Linux-Checkup:
+    runs-on: ubuntu-latest
+    steps:
+      - run: lscpu
+      - run: free -h
+      - run: df -h
+      
