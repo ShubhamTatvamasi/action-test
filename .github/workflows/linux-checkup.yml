@@ -7,4 +7,5 @@ jobs:
       - run: lscpu
       - run: free -h
       - run: df -h
+      - run: docker images
       
