@@ -9,4 +9,6 @@ jobs:
       - run: df -h
       - run: docker images
       - run: cat /etc/os-release
+      - run: pwd
+      - run: ls
       
