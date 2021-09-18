@@ -1,14 +1,25 @@
 name: Linux Checkup
 on: [push]
 jobs:
-  Linux-Checkup:
+
+  job-1:
     runs-on: ubuntu-latest
     steps:
-      - run: lscpu
-      - run: free -h
-      - run: df -h
-      - run: docker images
-      - run: cat /etc/os-release
-      - run: pwd
-      - run: ls
+    - run: echo 'job 1'
+
+  job-2:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo 'job 2'
+
+#   Linux-Checkup:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - run: lscpu
+#       - run: free -h
+#       - run: df -h
+#       - run: docker images
+#       - run: cat /etc/os-release
+#       - run: pwd
+#       - run: ls
       
