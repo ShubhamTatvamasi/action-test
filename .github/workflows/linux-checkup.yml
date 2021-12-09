@@ -5,6 +5,7 @@ jobs:
   job-1:
     runs-on: ubuntu-latest
     steps:
+      - run: docker-compose --version
       - run: echo 'job 1'
 
   job-2:
