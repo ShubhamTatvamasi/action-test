@@ -3,7 +3,7 @@ on: [push]
 jobs:
 
   job-1:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - run: docker-compose --version
       - run: echo 'job 1'
